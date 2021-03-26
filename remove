@@ -1,0 +1,15 @@
+
+bool ListBase::remove(int useri) (
+
+int i = useri-1;
+
+if ((i < 0) || (i >= listSize)) {
+    return false;
+}
+
+for (int pos = i; pos<listSize -1;pos++)
+     items[pos] =items[pos+1];
+
+listSize--; 
+return true;
+}
